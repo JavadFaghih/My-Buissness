@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+  
+        UITabBar.appearance().tintColor = .red
+    
     }
 
 

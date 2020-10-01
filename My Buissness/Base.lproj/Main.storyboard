@@ -8,23 +8,107 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--My business App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Buissness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="My_Buissness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="FnJ-Yp-zYu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YBE-Dc-BLj">
+                                <rect key="frame" x="144.5" y="108" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="BK0-iY-kxZ"/>
+                                    <constraint firstAttribute="height" constant="125" id="Bu0-Sf-eG1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="oCv-Dh-zD7">
+                                <rect key="frame" x="20" y="258" width="374" height="298"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g01-RN-aPw" customClass="UIButtonExt" customModule="My_Buissness" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="354" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a7E-8O-32r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Services">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5T-MT-cC7" customClass="UIButtonExt" customModule="My_Buissness" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="62" width="334" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Portfolio">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omM-Zk-fhJ" customClass="UIButtonExt" customModule="My_Buissness" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="124" width="314" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="About Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VU-ml-vyB" customClass="UIButtonExt" customModule="My_Buissness" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="186" width="294" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Contact Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfr-sd-7wi" customClass="UIButtonExt" customModule="My_Buissness" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="248" width="274" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Social Links">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g01-RN-aPw" firstAttribute="leading" secondItem="oCv-Dh-zD7" secondAttribute="leading" constant="10" id="1Mh-N8-BMu"/>
+                                    <constraint firstAttribute="trailing" secondItem="g01-RN-aPw" secondAttribute="trailing" constant="10" id="B9Y-MD-CDb"/>
+                                    <constraint firstAttribute="trailing" secondItem="omM-Zk-fhJ" secondAttribute="trailing" constant="30" id="Eis-h5-702"/>
+                                    <constraint firstAttribute="trailing" secondItem="c5T-MT-cC7" secondAttribute="trailing" constant="20" id="GPx-7z-jls"/>
+                                    <constraint firstAttribute="trailing" secondItem="4VU-ml-vyB" secondAttribute="trailing" constant="40" id="OSI-2Z-5Vq"/>
+                                    <constraint firstItem="xfr-sd-7wi" firstAttribute="leading" secondItem="oCv-Dh-zD7" secondAttribute="leading" constant="50" id="Rys-CF-Qs2"/>
+                                    <constraint firstItem="4VU-ml-vyB" firstAttribute="leading" secondItem="oCv-Dh-zD7" secondAttribute="leading" constant="40" id="ckg-vd-cYF"/>
+                                    <constraint firstItem="c5T-MT-cC7" firstAttribute="leading" secondItem="oCv-Dh-zD7" secondAttribute="leading" constant="20" id="ejj-lk-XwA"/>
+                                    <constraint firstItem="omM-Zk-fhJ" firstAttribute="leading" secondItem="oCv-Dh-zD7" secondAttribute="leading" constant="30" id="jh2-cr-LI6"/>
+                                    <constraint firstAttribute="trailing" secondItem="xfr-sd-7wi" secondAttribute="trailing" constant="50" id="x4U-5x-7Zq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oCv-Dh-zD7" firstAttribute="top" secondItem="YBE-Dc-BLj" secondAttribute="bottom" constant="25" id="EKQ-0v-B8z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FnJ-Yp-zYu" secondAttribute="trailing" id="JAh-R9-hcS"/>
+                            <constraint firstItem="FnJ-Yp-zYu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KSO-Gc-CvH"/>
+                            <constraint firstItem="YBE-Dc-BLj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Weo-GU-zgb"/>
+                            <constraint firstItem="YBE-Dc-BLj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aXN-py-ikm"/>
+                            <constraint firstItem="oCv-Dh-zD7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cC2-QK-jw2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FnJ-Yp-zYu" secondAttribute="bottom" id="h4y-z4-uwo"/>
+                            <constraint firstItem="FnJ-Yp-zYu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oIb-5q-nFB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oCv-Dh-zD7" secondAttribute="trailing" constant="20" id="qjg-on-Jpj"/>
+                            <constraint firstItem="oCv-Dh-zD7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sJn-De-oJY"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Tab1" selectedImage="Tab1" id="4kJ-sn-euo"/>
+                    <navigationItem key="navigationItem" title="My business App" id="1ZG-je-RYd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859" y="-494"/>
+            <point key="canvasLocation" x="367" y="-458"/>
         </scene>
-        <!--Item-->
+        <!--Services-->
         <scene sceneID="9o5-6L-X6z">
             <objects>
                 <viewController id="w4o-N3-bC5" sceneMemberID="viewController">
@@ -34,13 +118,13 @@
                         <viewLayoutGuide key="safeArea" id="dpo-0C-zX8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tls-0m-vr5"/>
+                    <tabBarItem key="tabBarItem" title="Services" image="Tab2" selectedImage="Tab2" id="tls-0m-vr5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juc-n1-Aoa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="163"/>
+            <point key="canvasLocation" x="-274" y="199"/>
         </scene>
-        <!--Item-->
+        <!--Portfolio-->
         <scene sceneID="NOn-kg-wtd">
             <objects>
                 <viewController id="hXC-oW-mlS" sceneMemberID="viewController">
@@ -50,11 +134,11 @@
                         <viewLayoutGuide key="safeArea" id="f4D-bo-I20"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="kjK-Pv-eH4"/>
+                    <tabBarItem key="tabBarItem" title="Portfolio" image="Tab3" selectedImage="Tab3" id="kjK-Pv-eH4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1Z-1t-mqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571" y="163"/>
+            <point key="canvasLocation" x="393" y="199"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Yd-q3-cQS">
@@ -62,11 +146,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lh7-OB-hYc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m4n-x4-kK5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="b0l-bZ-K3r"/>
+                        <segue destination="EdG-UO-Wor" kind="relationship" relationship="viewControllers" id="b0l-bZ-K3r"/>
                         <segue destination="w4o-N3-bC5" kind="relationship" relationship="viewControllers" id="Lsn-mz-j5h"/>
                         <segue destination="hXC-oW-mlS" kind="relationship" relationship="viewControllers" id="vtm-ML-HVM"/>
                         <segue destination="4xF-rU-TJb" kind="relationship" relationship="viewControllers" id="ibO-YU-5ar"/>
@@ -75,9 +160,9 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyh-kc-N7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+            <point key="canvasLocation" x="-1036" y="140"/>
         </scene>
-        <!--Item-->
+        <!--About Us-->
         <scene sceneID="W98-78-4ko">
             <objects>
                 <viewController id="4xF-rU-TJb" sceneMemberID="viewController">
@@ -87,13 +172,13 @@
                         <viewLayoutGuide key="safeArea" id="aGV-2g-OYC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ESI-N5-gdn"/>
+                    <tabBarItem key="tabBarItem" title="About Us" image="Tab4" selectedImage="Tab4" id="ESI-N5-gdn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMK-7n-bn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="874"/>
+            <point key="canvasLocation" x="-319" y="910"/>
         </scene>
-        <!--Item-->
+        <!--Contact Us-->
         <scene sceneID="PU6-BW-qne">
             <objects>
                 <viewController id="H3M-Lv-U0C" sceneMemberID="viewController">
@@ -103,17 +188,56 @@
                         <viewLayoutGuide key="safeArea" id="Xhy-Kr-HUC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="doO-UL-bfg"/>
+                    <tabBarItem key="tabBarItem" title="Contact Us" image="Tab5" selectedImage="Tab5" id="doO-UL-bfg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqf-ez-SJG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="874"/>
+            <point key="canvasLocation" x="416" y="910"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="EIO-ln-JpI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EdG-UO-Wor" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Tab1" selectedImage="Tab1" id="4kJ-sn-euo">
+                        <color key="badgeColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vbz-5v-Aer">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MU0-7T-bIH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7U-6e-XXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320.28985507246381" y="-458.03571428571428"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <image name="BackgroundImage" width="784" height="1320"/>
+        <image name="HomeLogo" width="1024" height="1024"/>
         <image name="Tab1" width="30" height="30"/>
+        <image name="Tab2" width="30" height="30"/>
+        <image name="Tab3" width="30" height="30"/>
+        <image name="Tab4" width="30" height="30"/>
+        <image name="Tab5" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
