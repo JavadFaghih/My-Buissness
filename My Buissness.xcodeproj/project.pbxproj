@@ -103,7 +103,9 @@
 			children = (
 				4D4B39492525F17000957A6B /* AppDelegate.swift */,
 				4D4B394B2525F17000957A6B /* SceneDelegate.swift */,
-				4D4B394D2525F17000957A6B /* ViewController.swift */,
+				4D4B39812525F19F00957A6B /* Model */,
+				4D4B39802525F19800957A6B /* View */,
+				4D4B397F2525F18B00957A6B /* Controller */,
 				4D4B394F2525F17000957A6B /* Main.storyboard */,
 				4D4B39552525F17100957A6B /* Assets.xcassets */,
 				4D4B39572525F17100957A6B /* LaunchScreen.storyboard */,
@@ -129,6 +131,28 @@
 				4D4B39702525F17100957A6B /* Info.plist */,
 			);
 			path = "My BuissnessUITests";
+			sourceTree = "<group>";
+		};
+		4D4B397F2525F18B00957A6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D4B394D2525F17000957A6B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4D4B39802525F19800957A6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D4B39812525F19F00957A6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
