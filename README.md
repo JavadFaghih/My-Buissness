@@ -1,6 +1,10 @@
 # My-Buissness
 
+
+
 Universal App using Size Class for UI 
+
+use MVC design Pattern
 
 use collectionView and TableView in a UITabbar for Showing data
 
